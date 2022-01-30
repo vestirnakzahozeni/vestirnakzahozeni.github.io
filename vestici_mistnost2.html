@@ -19,8 +19,8 @@
       <h3>Nechť hod věštcem odhalí váš osud...</h3>
     </div>
     <div class="mistoNaVideo">
-      <video id="videjko" class="hodMilanem">
-        <source src="videa/videoAri1.mp4" type="video/mp4" />
+      <video autoplay id="videjko" class="hodMilanem">
+        <source src="videa/videoAri.mp4" type="video/mp4" />
 
         Your browser does not support the video tag.
       </video>
@@ -60,6 +60,16 @@
       function showStuff() {
         document.querySelector(".ukazVestbu").style.display = "flex";
       }
+
+      document
+        .querySelector(".vstoupit")
+        .addEventListener("click", function () {
+          var cislo = Math.ceil(Math.random() * 3);
+
+          var videoHazej = document.querySelector("#videjko");
+
+          console.log((videoHazej.src = "videa/videoAri" + cislo + ".mp4"));
+        });
     </script>
   </body>
 </html>
