@@ -247,6 +247,9 @@ h3 {
   text-align: center;
   margin-top: -15px;
 }
+.buttonek2 {
+  display: none;
+}
 
 .kartaVestce {
   width: 86%;
@@ -354,6 +357,7 @@ h3 {
     line-height: 6vw;
   }
   .buttonek2 {
+    display: block;
     width: 90%;
     order: 4;
     text-align: center;
@@ -411,6 +415,12 @@ h3 {
 .hazej:hover {
   transform: none;
 }
+
+@media (max-width: 800px) {
+  #videjko {
+    width: 90%;
+  }
+}
 /* KONEC ČTVRTÉ STRÁNKY */
 
 /* POSLEDNÍ STRÁNKA - VĚŠTBA */
@@ -443,9 +453,7 @@ h3 {
 .vKarte {
   color: #330036;
 }
-.blabla {
-  padding-top: 4vh;
-}
+
 .kartaMilan {
   width: 100%;
 }
@@ -459,4 +467,28 @@ h3 {
   font-family: "Mea Culpa", cursive;
   line-height: 115%;
   margin-right: 0;
+}
+@media (max-width: 800px) {
+  .mistoVestba {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    /* padding-top: 25%; */
+  }
+  #sentence {
+    /* margin-top: 25%; */
+    font-size: 8vw;
+    padding: 35% 0;
+    margin: 0 auto;
+  }
+  .buttony {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+  }
+  .domu {
+    margin-top: 50px;
+  }
 }
