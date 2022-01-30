@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Věštírna k zahození</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imgs/logisko.png" type="image/icon" />
+  </head>
+  <body>
+    <div class="textik">
+      <h3>Nechť hod věštcem odhalí váš osud...</h3>
+    </div>
+    <div class="mistoNaVideo">
+      <video autoplay id="videjko" class="hodMilanem">
+        <source src="videa/videoMilan.mp4" type="video/mp4" />
+
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="playVideo" onclick="style.display = 'none'">
+      <button onclick="playVid()" type="button" class="vstoupit hazej">
+        HOĎ!
+      </button>
+    </div>
+    <div class="ukazVestbu">
+      <a
+        href="vestba.html"
+        style=""
+        onclick="sentence()"
+        class="vstoupit ukaz animacniButton"
+      >
+        Odkrýt věštbu<i class="fa farefresh" aria-hidden="true"></i
+      ></a>
+    </div>
+    <script src="app.js"></script>
+    <script>
+      var vid = document.getElementById("videjko");
+
+      function playVid() {
+        vid.play();
+      }
+
+      document.querySelector(".ukazVestbu").style.display = "none";
+      document
+        .querySelector(".playVideo")
+        .addEventListener("click", myFunction);
+
+      function myFunction() {
+        let timeout = setTimeout(showStuff, 2500);
+      }
+      // console.debug("Start page");
+      function showStuff() {
+        document.querySelector(".ukazVestbu").style.display = "flex";
+      }
+
+      document
+        .querySelector(".vstoupit")
+        .addEventListener("click", function () {
+          var cislo = Math.ceil(Math.random() * 3);
+
+          var videoHazej = document.querySelector("#videjko");
+
+          console.log((videoHazej.src = "videa/videoMilan" + cislo + ".mp4"));
+        });
+    </script>
+  </body>
+</html>

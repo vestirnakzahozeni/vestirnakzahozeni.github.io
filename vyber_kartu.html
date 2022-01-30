@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Věštírna k zahození</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imgs/logisko.png" type="image/icon" />
+  </head>
+  <body>
+    <div class="textik">
+      <h3>Vyberte si kartu!</h3>
+    </div>
+    <div class="kontejner">
+      <div class="hromadaKaret">
+        <div class="karta karta1 vyberKartu">
+          <img
+            src="imgs/kartaZadniStrana.png"
+            alt="zadní strana karty"
+            class="kartaZadniStrana"
+          />
+        </div>
+        <div class="karta karta2 vyberKartu">
+          <img
+            src="imgs/kartaZadniStrana.png"
+            alt="zadní strana karty"
+            class="kartaZadniStrana"
+          />
+        </div>
+        <div class="karta karta3 vyberKartu">
+          <img
+            src="imgs/kartaZadniStrana.png"
+            alt="zadní strana karty"
+            class="kartaZadniStrana"
+          />
+        </div>
+        <div class="karta karta4 vyberKartu">
+          <img
+            src="imgs/kartaZadniStrana.png"
+            alt="zadní strana karty"
+            class="kartaZadniStrana"
+          />
+        </div>
+        <div class="karta karta5 vyberKartu">
+          <img
+            src="imgs/kartaZadniStrana.png"
+            alt="zadní strana karty"
+            class="kartaZadniStrana"
+          />
+        </div>
+        <div class="karta karta6 vyberKartu">
+          <img
+            src="imgs/kartaZadniStrana.png"
+            alt="zadní strana karty"
+            class="kartaZadniStrana"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".karta1").addEventListener("click", function () {
+        let poradiZvire = Math.ceil(Math.random() * 6);
+
+        let infoStranka = document.querySelector(".infoZvire");
+        let odkaz = (infoStranka = "zvire" + poradiZvire + ".html");
+        window.location.href = odkaz;
+      });
+      document.querySelector(".karta2").addEventListener("click", function () {
+        let poradiZvire = Math.ceil(Math.random() * 6);
+
+        let infoStranka = document.querySelector(".infoZvire");
+        let odkaz = (infoStranka = "zvire" + poradiZvire + ".html");
+        window.location.href = odkaz;
+      });
+      document.querySelector(".karta3").addEventListener("click", function () {
+        let poradiZvire = Math.ceil(Math.random() * 6);
+
+        let infoStranka = document.querySelector(".infoZvire");
+        let odkaz = (infoStranka = "zvire" + poradiZvire + ".html");
+        window.location.href = odkaz;
+      });
+      document.querySelector(".karta4").addEventListener("click", function () {
+        let poradiZvire = Math.ceil(Math.random() * 6);
+
+        let infoStranka = document.querySelector(".infoZvire");
+        let odkaz = (infoStranka = "zvire" + poradiZvire + ".html");
+        window.location.href = odkaz;
+      });
+      document.querySelector(".karta5").addEventListener("click", function () {
+        let poradiZvire = Math.ceil(Math.random() * 6);
+
+        let infoStranka = document.querySelector(".infoZvire");
+        let odkaz = (infoStranka = "zvire" + poradiZvire + ".html");
+        window.location.href = odkaz;
+      });
+      document.querySelector(".karta6").addEventListener("click", function () {
+        let poradiZvire = Math.ceil(Math.random() * 6);
+
+        let infoStranka = document.querySelector(".infoZvire");
+        let odkaz = (infoStranka = "zvire" + poradiZvire + ".html");
+        window.location.href = odkaz;
+      });
+    </script>
+  </body>
+</html>
