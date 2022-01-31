@@ -241,7 +241,7 @@ h3 {
     padding-top: 0;
   }
 }
-@media (min-width: 370px max-width: 700px) {
+@media (min-width: 370px) and (max-width: 700px) {
   .karta1,
   .karta2,
   .karta3 {
@@ -381,15 +381,13 @@ h3 {
     order: 1;
     margin: 0;
     margin-bottom: 20px;
-    margin-top: 100%;
+    margin-top: 80%;
   }
   .oZvireti {
     font-size: 5vw;
     line-height: 5.5vw;
   }
-  /* .vstoupit {
-    margin-top: 60%;
-  } */
+
   .nazevZvirete {
     font-size: 5vh;
     padding-left: 3vh;
@@ -400,11 +398,12 @@ h3 {
   }
   .buttonek2 {
     display: block;
-    width: 90%;
+    width: 100%;
     order: 4;
     text-align: center;
-    padding-bottom: 50px;
-    height: 300px;
+    padding-bottom: 0;
+    justify-content: center;
+    height: 100px;
   }
 
   .buttonek {
