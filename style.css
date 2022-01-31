@@ -241,7 +241,7 @@ h3 {
     padding-top: 0;
   }
 }
-@media (min-width: 370px) and (max-width: 700px) {
+@media (min-width: 480px) and (max-width: 700px) {
   .karta1,
   .karta2,
   .karta3 {
@@ -424,7 +424,7 @@ h3 {
 #videjko {
   width: 100%;
   border-radius: 3.5vh;
-  width: 55%;
+
   margin: 0 auto;
 }
 
@@ -460,6 +460,8 @@ h3 {
 @media (max-width: 800px) {
   #videjko {
     width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 /* KONEC ČTVRTÉ STRÁNKY */
