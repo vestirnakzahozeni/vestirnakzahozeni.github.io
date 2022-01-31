@@ -12,7 +12,7 @@ body {
   padding-top: 5%;
 }
 .container {
-  height: 200px;
+  height: 2%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -35,14 +35,16 @@ h1 {
   font-family: "Mea culpa", cursive;
   color: #fed872;
 }
-.pozadi img {
+.deskopNazev {
   width: 70vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5%;
 }
-
+.mobilniNazev {
+  display: none;
+}
 h2 {
   font-style: normal;
   font-weight: normal;
@@ -83,7 +85,25 @@ h2 {
   }
   h2 {
     font-size: 6vw;
+    margin: 0;
   }
+  .deskopNazev {
+    display: none;
+  }
+  .mobilniNazev {
+    display: block;
+    padding-bottom: 2%;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .vstup {
+    font-size: 6vw;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* .container {
+    margin-top: -20%;
+  } */
 }
 /* KONEC PRVNÍ STRÁNKY */
 
@@ -92,7 +112,7 @@ h2 {
 .kontejner {
   display: flex;
   justify-content: center;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 .textik {
   padding-top: 0px;
@@ -208,6 +228,7 @@ h3 {
     transform: translateX(0rem) translateY(0rem) rotate(0deg);
   }
 }
+
 /* KONEC DRUHÉ STRÁNKY  */
 
 /* TŘETÍ STRÁNKA - INFO O VĚŠTCOVI */
@@ -345,9 +366,9 @@ h3 {
     font-size: 5vw;
     line-height: 5.5vw;
   }
-  .vstoupit {
+  /* .vstoupit {
     margin-top: 60%;
-  }
+  } */
   .nazevZvirete {
     font-size: 5vh;
     padding-left: 3vh;
@@ -447,6 +468,7 @@ h3 {
   padding-top: 10%;
   padding-bottom: 0;
   align-items: center;
+  justify-content: center;
   background-position-x: center;
   background-position-y: center;
 }
@@ -462,7 +484,7 @@ h3 {
   font-size: 3.8vw;
   color: #330036;
   text-align: center;
-  padding: 0 4vw 0 4vw;
+  padding: 2% 4vw 0 4vw;
   padding-bottom: 0;
   font-family: "Mea Culpa", cursive;
   line-height: 115%;
