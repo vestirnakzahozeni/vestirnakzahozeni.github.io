@@ -512,17 +512,24 @@ h3 {
   line-height: 115%;
   margin-right: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .mistoVestba {
     width: 90%;
+    height: 65vw;
     padding: 0;
     margin: 0 auto;
+    padding-top: 10%;
+    background-image: url(imgs/kartaVestbaM.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-clip: border-box;
+    border-radius: 20px;
     /* padding-top: 25%; */
   }
   #sentence {
     /* margin-top: 25%; */
     font-size: 8vw;
-    padding: 35% 0;
+    padding: 8% 15%;
     margin: 0 auto;
   }
   .buttony {
