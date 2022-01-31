@@ -424,7 +424,7 @@ h3 {
 }
 #videjko {
   border-radius: 3.5vh;
-  width: 50%;
+  width: 56%;
   margin: 0 auto;
 }
 
@@ -531,7 +531,7 @@ h3 {
   }
   #sentence {
     /* margin-top: 25%; */
-    font-size: 9vw;
+    font-size: 8vw;
     padding: 3% 15%;
     margin: 0 auto;
   }
